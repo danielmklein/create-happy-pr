@@ -1,0 +1,12 @@
+name: 'Create a happy PR'
+description: 'Create a PR and put the commit log into it'
+inputs:
+  base_branch:
+    description: 'The base branch for the pull request. Defaults to main.'
+    required: false
+outputs:
+  pr_number:
+    description: 'Pull Request number'
+runs:
+  using: 'node12'
+  main: 'index.js'
